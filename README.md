@@ -1,6 +1,6 @@
 # File system notifications for Go
 
-[![GoDoc](https://godoc.org/github.com/fsnotify/fsnotify?status.svg)](https://godoc.org/github.com/fsnotify/fsnotify) [![Go Report Card](https://goreportcard.com/badge/github.com/fsnotify/fsnotify)](https://goreportcard.com/report/github.com/fsnotify/fsnotify)
+[![GoDoc](https://godoc.org/github.com/fsnotify/fsnotify-offical?status.svg)](https://godoc.org/github.com/fsnotify/fsnotify-offical) [![Go Report Card](https://goreportcard.com/badge/github.com/fsnotify/fsnotify-offical)](https://goreportcard.com/report/github.com/fsnotify/fsnotify-offical)
 
 fsnotify utilizes [golang.org/x/sys](https://godoc.org/golang.org/x/sys) rather than `syscall` from the standard library. Ensure you have the latest version installed by running:
 
@@ -15,23 +15,23 @@ Cross platform: Windows, Linux, BSD and macOS.
 | inotify               | Linux 2.6.27 or later, Android\* | Supported [![Build Status](https://travis-ci.org/fsnotify/fsnotify.svg?branch=master)](https://travis-ci.org/fsnotify/fsnotify) |
 | kqueue                | BSD, macOS, iOS\*                | Supported [![Build Status](https://travis-ci.org/fsnotify/fsnotify.svg?branch=master)](https://travis-ci.org/fsnotify/fsnotify) |
 | ReadDirectoryChangesW | Windows                          | Supported [![Build Status](https://travis-ci.org/fsnotify/fsnotify.svg?branch=master)](https://travis-ci.org/fsnotify/fsnotify) |
-| FSEvents              | macOS                            | [Planned](https://github.com/fsnotify/fsnotify/issues/11)                                                                       |
-| FEN                   | Solaris 11                       | [In Progress](https://github.com/fsnotify/fsnotify/issues/12)                                                                   |
-| fanotify              | Linux 2.6.37+                    | [Planned](https://github.com/fsnotify/fsnotify/issues/114)                                                                      |
-| USN Journals          | Windows                          | [Maybe](https://github.com/fsnotify/fsnotify/issues/53)                                                                         |
-| Polling               | *All*                            | [Maybe](https://github.com/fsnotify/fsnotify/issues/9)                                                                          |
+| FSEvents              | macOS                            | [Planned](https://github.com/fsnotify/fsnotify-offical/issues/11)                                                                       |
+| FEN                   | Solaris 11                       | [In Progress](https://github.com/fsnotify/fsnotify-offical/issues/12)                                                                   |
+| fanotify              | Linux 2.6.37+                    | [Planned](https://github.com/fsnotify/fsnotify-offical/issues/114)                                                                      |
+| USN Journals          | Windows                          | [Maybe](https://github.com/fsnotify/fsnotify-offical/issues/53)                                                                         |
+| Polling               | *All*                            | [Maybe](https://github.com/fsnotify/fsnotify-offical/issues/9)                                                                          |
 
 \* Android and iOS are untested.
 
-Please see [the documentation](https://godoc.org/github.com/fsnotify/fsnotify) and consult the [FAQ](#faq) for usage information.
+Please see [the documentation](https://godoc.org/github.com/fsnotify/fsnotify-offical) and consult the [FAQ](#faq) for usage information.
 
 ## API stability
 
-fsnotify is a fork of [howeyc/fsnotify](https://godoc.org/github.com/howeyc/fsnotify) with a new API as of v1.0. The API is based on [this design document](http://goo.gl/MrYxyA). 
+fsnotify is a fork of [howeyc/fsnotify](https://godoc.org/github.com/howeyc/fsnotify) with a new API as of v1.0. The API is based on [this design document](http://goo.gl/MrYxyA).
 
-All [releases](https://github.com/fsnotify/fsnotify/releases) are tagged based on [Semantic Versioning](http://semver.org/). Further API changes are [planned](https://github.com/fsnotify/fsnotify/milestones), and will be tagged with a new major revision number.
+All [releases](https://github.com/fsnotify/fsnotify-offical/releases) are tagged based on [Semantic Versioning](http://semver.org/). Further API changes are [planned](https://github.com/fsnotify/fsnotify-offical/milestones), and will be tagged with a new major revision number.
 
-Go 1.6 supports dependencies located in the `vendor/` folder. Unless you are creating a library, it is recommended that you copy fsnotify into `vendor/github.com/fsnotify/fsnotify` within your project, and likewise for `golang.org/x/sys`.
+Go 1.6 supports dependencies located in the `vendor/` folder. Unless you are creating a library, it is recommended that you copy fsnotify into `vendor/github.com/fsnotify/fsnotify-offical` within your project, and likewise for `golang.org/x/sys`.
 
 ## Usage
 
@@ -41,7 +41,7 @@ package main
 import (
 	"log"
 
-	"github.com/fsnotify/fsnotify"
+	"github.com/fsnotify/fsnotify-offical"
 )
 
 func main() {
@@ -86,7 +86,7 @@ Please refer to [CONTRIBUTING][] before opening an issue or pull request.
 
 ## Example
 
-See [example_test.go](https://github.com/fsnotify/fsnotify/blob/master/example_test.go).
+See [example_test.go](https://github.com/fsnotify/fsnotify-offical/blob/master/example_test.go).
 
 ## FAQ
 
@@ -117,11 +117,11 @@ There are OS-specific limits as to how many watches can be created:
 fsnotify requires support from underlying OS to work. The current NFS protocol does not provide network level support for file notifications.
 
 [#62]: https://github.com/howeyc/fsnotify/issues/62
-[#18]: https://github.com/fsnotify/fsnotify/issues/18
-[#11]: https://github.com/fsnotify/fsnotify/issues/11
+[#18]: https://github.com/fsnotify/fsnotify-offical/issues/18
+[#11]: https://github.com/fsnotify/fsnotify-offical/issues/11
 [#7]: https://github.com/howeyc/fsnotify/issues/7
 
-[contributing]: https://github.com/fsnotify/fsnotify/blob/master/CONTRIBUTING.md
+[contributing]: https://github.com/fsnotify/fsnotify-offical/blob/master/CONTRIBUTING.md
 
 ## Related Projects
 
